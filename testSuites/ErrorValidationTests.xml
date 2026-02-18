@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">
+
+    <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups>
+
+    <test name="Submit Order Test" thread-count="5">
+        <classes>
+            <class name="pritamawateacademy.tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="Error Validations Test" thread-count="5">
+        <classes>
+            <class name="pritamawateacademy.tests.ErrorValidationTest"/>
+        </classes>
+    </test>
+
+</suite>
